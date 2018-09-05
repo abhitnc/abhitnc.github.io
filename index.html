@@ -1,109 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Memory Game</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
-    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker" >
-    <link rel="stylesheet" href="css/app.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Arcade Game</title>
+	<meta name="description" content="">
+	<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/design.css">
 </head>
 <body>
+	<div class="container">
+		<header>
+			<h1>Arcade Game</h1>
+		</header>
 
-    <div class="container">
-        <header>
-            <h3>Memory Game</h3>
-        </header>
+		<section class="score-panel">
+			<div class="score">
+				Total Score <span class="scores">0</span>
+			</div>
+			<span class="time">0</span> Second
+			<div class="play" title="Play">
+				<i class="fa fa-play-circle"></i>
+			</div>
+			<div class="restart" title="Restart">
+				<i class="fa fa-repeat"></i>
+			</div>
+		</section>
+		<aside class="players" title="Select Player">
+		<!-- Players will be added by javascript dynamically -->
+		</aside>
+		<!-- The Modal -->
+		<div id="popup-modal" class="modal hidden">
 
-        <section class="score-panel">
-        	<ul class="stars">
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        	</ul>
-
-        	<span class="moves">0</span> Move(s)
-
-            <div class="timer">
-            </div>
-
-            <div class="restart" onclick=startGame()>
-        		<i class="fa fa-repeat"></i>
-        	</div>
-        </section>
-
-        <ul class="deck" id="card-deck">
-            <li class="card match" type="anchor">
-                <i class="fa fa-anchor"></i>
-            </li>
-            <li class="card" type="bolt" >
-                <i class="fa fa-bolt"></i>
-            </li>
-            <li class="card" type="cube">
-                <i class="fa fa-cube"></i>
-            </li>
-            <li class="card" type="plane">
-                <i class="fa fa-paper-plane-o"></i>
-            </li>
-            <li class="card" type="bomb">
-                <i class="fa fa-bomb"></i>
-            </li>
-            <li class="card" type="leaf">
-                <i class="fa fa-leaf"></i>
-            </li>
-            <li class="card" type="cube">
-                <i class="fa fa-cube"></i>
-            </li>
-            <li class="card match" type="anchor">
-                <i class="fa fa-anchor"></i>
-            </li>
-            <li class="card" type="leaf">
-                <i class="fa fa-leaf"></i>
-            </li>
-            <li class="card" type="bicycle">
-                <i class="fa fa-bicycle"></i>
-            </li>
-            <li class="card" type="diamond">
-                <i class="fa fa-diamond"></i>
-            </li>
-            <li class="card" type="plane">
-                <i class="fa fa-paper-plane-o"></i>
-            </li>
-            <li class="card" type="diamond">
-                <i class="fa fa-diamond"></i>
-            </li>
-            <li class="card" type="bomb">
-                <i class="fa fa-bomb"></i>
-            </li>
-            <li class="card open show" type="bolt">
-                <i class="fa fa-bolt"></i>
-            </li>
-            <li class="card" type="bicycle">
-                <i class="fa fa-bicycle"></i>
-            </li>
-
-        </ul>
-
-        <div id="popup1" class="overlay">
-            <div class="popup">
-                <h2>Congo</h2>
-                <a class="close" href=# >×</a>
-                <div class="content-1">
-                    You did it... you're a winner
-                </div>
-                <div class="content-2">
-                    <p>You made <span id=finalMove> </span> moves </p>
-                    <p>in <span id=totalTime> </span> </p>
-                    <p>Rating:  <span id=starRating></span></p>
-                </div>
-                <button id="play-again"onclick="playAgain()">
-                    Wanna play again? Cick here</a>
-                </button>
-            </div>
-        </div>
-
-    </div>
-    <script src="js/app.js"></script>
+			<div class="modal-content">
+				<span class="close" tabindex="0">&times;</span>
+				<div class="fa-icon">
+					<i class="">
+					</i>
+				</div>
+				<div class="message">
+					<h1>
+					</h1>
+				</div>
+				<div class="replayGame">
+					<button class="replay">REPLAY</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/abc.js"></script>
+	<script src="js/ab.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>
