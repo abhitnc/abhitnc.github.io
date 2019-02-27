@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-    <title>:: NUSSD</title>
+    <title>:: National University Students' Skill Development Programme ::</title>
     <style>
 		.menu
 		{
@@ -42,6 +42,62 @@
 			font-size: 20px;
 			text-align: center;
 		}
+		[class*="col-"] 
+		{
+			  width: 100%;
+		}
+		@media only screen and (min-width: 768px) 
+		{
+			  /* For desktop: */
+			  .col-1 {width: 8.33%;}
+			  .col-2 {width: 16.66%;}
+			  .col-3 {width: 25%;}
+			  .col-4 {width: 33.33%;}
+			  .col-5 {width: 41.66%;}
+			  .col-6 {width: 50%;}
+			  .col-7 {width: 58.33%;}
+			  .col-8 {width: 66.66%;}
+			  .col-9 {width: 75%;}
+			  .col-10 {width: 83.33%;}
+			  .col-11 {width: 91.66%;}
+			  .col-12 {width: 100%;}
+		}
+		  @media only screen and (max-width: 550px) {
+            
+            .nlogo
+            {
+              width: 100%;
+              height: auto;
+            }
+            .nussd
+            {
+              font-size: 3vw;
+              text-align: center;
+            }
+            .social-icon
+            {
+              text-align: center;
+            }
+            .tiss-logo
+            {
+            	margin-left: 300px;
+            }
+            .text3
+            {
+            	width:250px;
+            }
+          }
+          @media only screen and (min-width: 992px) 
+          {
+            .tiss-logo
+            {
+              margin-left: 950px;
+            }
+            .nussd
+            {
+              font-size: 26.5px;
+            }
+          }
 		</style>
   </head>
 <body>
@@ -52,41 +108,36 @@
 			</button>
 	</div>
   	<div class="container" style="margin-top: 10px;">
-  		<div class="row">
-  			<div class="col-sm-1">
-				  <a class="navbar-brand" href="#">
-				    <img src="images/nlogo.png" alt="logo" style="width:80px;">
-				  </a>
-			</div>
-			<div class="col-sm-8" style="margin-top: 10px;">
-				<h4 style="font-size:1.9vw;">National University Students' Skill Development Programme<br>राष्ट्रीय विश्वविद्यालय के छात्रों का कौशल विकास कार्यक्रम </h4>
-			</div>
-  			<div class="col-sm-2">
-			  	<div class="navbar-brand">
-				<i class='fab fa-linkedin' style='font-size:20px'></i>
-			    	</div>
-			  	<div class="navbar-brand">
-			    	<i class='fab fa-facebook' style='font-size:20px'></i>
-			     	</div>
-			  	<div class="navbar-brand">
-			    	<i class='fab fa-twitter' style='font-size:20px'></i>
-			     	</div>
-			  	<div class="navbar-brand">
-			    	<i class='fab fa-youtube' style='font-size:20px'></i>
-			     	</div>
-			  		<br>
-			  	<div class="form-group">
-			      	<input type="search" placeholder="Search" class="rounded form-control text3" style="text-align: center;" id="text3">
-			    </div>
-			</div>
-			<div class="col-sm-1">
-			 	<a class="navbar-brand" href="#">
-			    	<img src="images/tlogo.jpg" alt="logo" style="width:70px;">
-			  	</a>
-			 </div>
-		</div>
-	</div>
-	<div class="container">
+      <div class="row">
+        <div class="col-sm-1">
+          <a class="navbar-brand text-center" href="#">
+            <img src="images/nlogo1.png" alt="logo" class="nlogo" style="width:80px;">
+            <img src="images/tlogo.jpg" class="tiss-logo" alt="logo" style="width:80px;">
+          </a>
+       </div>
+      <div class="col-sm-8" style="margin-top: 10px;">
+        <h4 class="nussd">National University Students' Skill Development Programme<br>राष्ट्रीय विश्वविद्यालय के छात्रों का कौशल विकास कार्यक्रम </h4>
+      </div>
+        <div class="col-sm-2 social-icon">
+          <div class="navbar-brand">
+        <i class='fab fa-linkedin' style='font-size:20px'></i>
+            </div>
+          <div class="navbar-brand">
+            <i class='fab fa-facebook' style='font-size:20px'></i>
+            </div>
+          <div class="navbar-brand">
+            <i class='fab fa-twitter' style='font-size:20px'></i>
+            </div>
+          <div class="navbar-brand">
+            <i class='fab fa-youtube' style='font-size:20px'></i>
+            </div>
+            <br>
+          <div class="form-group text-center">
+              <input type="search" placeholder="Search" class="rounded form-control text3 text-center" style="text-align: center;margin:auto;" id="text3">
+          </div>
+      </div>
+    </div>
+  </div><div class="container">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		  	<a class="navbar-brand" href="#Menu123" id="#Menu123">Menu</a>
 		  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="	navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
